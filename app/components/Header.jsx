@@ -1,4 +1,4 @@
-import { auth } from '@clerk/nextjs'
+import { UserButton, auth } from '@clerk/nextjs'
 import Link from 'next/link'
 import React from 'react'
 
@@ -28,8 +28,10 @@ const Header = () => {
                                 Sign up
                             </Link>
                         </>
-                    )
-                    }
+                    )}
+                    <div className='ml-auto'   >
+                        <UserButton afterSingUpUrl ='/'/>
+                    </div>
 
                 </div>
             </div>
