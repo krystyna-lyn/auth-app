@@ -23,9 +23,9 @@ export default function SignUpForm() {
     // Start the sign-up process using the email and password provided
     try {
       await signUp.create({
-        firstName,
-        lastName,
-        email,
+        first_name: firstName,
+        last_name: lastName,
+        email_address: email,
         password,
       });
  
